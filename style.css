@@ -37,7 +37,9 @@ li{
     background-color: transparent;
     padding: 20px 50px;
     overflow: hidden; 
-
+.logo img{
+    width:250px;
+}
     
    }
 .nav-bar{          
@@ -46,6 +48,7 @@ li{
 }
 .nav-button{
     display: flex;
+    margin: auto;
     padding: 20px;
 }
 .nav-list{
@@ -92,7 +95,7 @@ transition: 0.5s linear;
     transform: scale(1.1);
 }
 
-@media (max-width: 700px) {
+@media (max-width: 760px) {
     header{
         display: block;
         justify-content: center;
@@ -105,18 +108,19 @@ transition: 0.5s linear;
         justify-content: center;
         align-items: center;
        
-    }
-    .nav-button{
-        justify-content: center;
-        padding:10px 15px;
-        
+    } 
+    .nav-button{        
+        padding:10px 0px;
     }
     .nav-list{
-        
-        font-size: 10px;
-        padding: 10px;     
+    justify-content:space-between;
+    margin: auto;
+    padding: 4px;
+    font-size: 10px; 
+    font-weight: 500;   
     }
     .btn{
+        padding: 2px;
         font-size: 10px;
         
     }
@@ -127,7 +131,40 @@ transition: 0.5s linear;
     .nav-list:hover{
         color:  rgb(108, 164, 3);;
     }    
-  }
+}
+@media screen and (min-device-width: 760px) 
+    and (max-device-width: 900px){
+        header{
+            display: block;
+            justify-content: center;
+            align-items: center;
+            width: 100%;
+            padding: 5px 0;
+        } 
+        .logo{
+            margin-top: 20px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+           
+        } 
+        .logo img{
+            width:300px;
+        }
+        .nav-button{        
+            padding:10px 0px;
+        }
+        .nav-list{
+        padding: 8px;
+        font-size: 20px; 
+          
+        }
+        .btn{
+            padding: 8px;
+            font-size:20px;            
+        }
+
+}
 
 
 
@@ -238,7 +275,13 @@ transition: 0.5s linear;
         font-size: 15px;
     }
 }
-     
+@media screen and (min-device-width: 760px) 
+    and (max-device-width: 900px){
+        .count{
+            left: 50%;}
+            
+
+}     
      /* packages section */
 
 .packages{
@@ -1059,7 +1102,7 @@ justify-content: space-between;
          margin: auto;
      }
      
- }
+}
  
 /* Up-Arrow */
 .up-arrow{
@@ -1067,7 +1110,7 @@ justify-content: space-between;
     position: fixed;
     bottom: 100px;
     right: 50px;
-    cursor: pointer;
+    cursor: pointer;    
 }
 .up-arrow img{
     width: 50px;
