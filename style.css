@@ -414,7 +414,7 @@ padding: 25px 15px 10px;
     width: 80%;
     margin: auto;
     text-align: center;
-    padding: 50px 0px;
+    padding: 70px 0px;
 }
 .btn3{
 
@@ -613,15 +613,51 @@ padding: 25px 15px 10px;
 .explore{
    background-color: rgb(195, 226, 194);
     width: 100%;
-    margin:100px auto auto auto;
+    margin:auto;
     display: flex;
     overflow: hidden;
+    
 }
 .explore-content{
     margin: auto;
     flex-basis: 40%;   
     width: 100%;
+    position: relative;
+    z-index: 0;
+    margin: auto;
+    width: 70%;
+    margin: auto;
+    text-align: center;
+    padding-top: 20px;
+    font-family: 'Archivo', sans-serif;
 }  
+.explore-title{
+    background-color: rgb(198, 198, 198);
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    width:60%;
+    border-radius: 20px;
+    padding: 20px;
+    z-index: 1;
+    margin: auto;
+}
+.explore-content h1{
+    font-family: 'Archivo', sans-serif;
+    font-size: 30px;
+}
+.explore-content p{
+    padding-top: 10px;
+    font-size: 15px;
+}
+.explore-blank{
+    width: 400px;
+    height: 300px;
+    background-color: rgb(44, 131, 131);
+    border-radius: 50%;
+    position: absolute;
+    top: -30px;
+    left: 0px;
+    z-index:-1;
+}
 .explore-cards{
     margin: auto;
     flex-basis: 60%;
@@ -698,6 +734,16 @@ padding: 25px 15px 10px;
        flex-basis: 100%;   
        width: 80%;
     }
+    .explore-blank{
+        display: none;
+    }
+    .explore-title{
+        width: 100%;
+        box-shadow: none;
+        background-color: transparent;
+        padding: 0px;
+        margin: auto;
+    }
     .explore-cards{        
         flex-basis: 100%;
         padding-top: 50px;           
@@ -722,13 +768,20 @@ padding: 25px 15px 10px;
 
 @media screen and (min-device-width: 768px) 
     and (max-device-width: 950px){
-        .explore-cards{         
-                     
-            grid-template-columns: 180px 180px 180px;          
-        
+        .explore-cards{                        
+            grid-template-columns: 180px 180px 180px;        
                   
         }
-        
+        .explore-blank{
+            width: 300px;
+            height: 300px;
+            background-color: rgb(44, 131, 131);
+            border-radius: 50%;
+            position: absolute;
+            top: -30px;
+            left: 0px;
+            z-index:-1;
+        }
     }
 @media screen and (min-device-width: 950px) 
     and (max-device-width: 1200px) {
@@ -778,7 +831,7 @@ padding: 25px 15px 10px;
     position: absolute;
     width: 300px;
     height: 300px;  
-    background-color: rgb(226, 233, 239); 
+    background-color: rgb(198, 198, 198);
     padding: 30px; 
     border-radius: 20px;
     left: 600px;
