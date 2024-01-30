@@ -131,6 +131,10 @@ transition: 0.5s linear;
     .nav-list:hover{
         color:  rgb(108, 164, 3);;
     }    
+  
+    .exp{
+        display: none;
+    }
 }
 @media screen and (min-device-width: 760px) 
     and (max-device-width: 900px){
@@ -246,17 +250,17 @@ transition: 0.5s linear;
 
  @media(max-width:700px) {
     .home-text{
-        top: 50%;
-        font-size: 20px;
+        top: 45%;
+        font-size: 25px;
     }
     .sub-text{
-        font-size: 15px;
-    }
-    .sub-text1{
         font-size: 20px;
     }
+    .sub-text1{
+        font-size: 25px;
+    }
     .sub-text2{
-        font-size: 8px;
+        font-size: 10px;
     }
     .btn-1{           
         padding: 8px 20Px;
@@ -296,8 +300,8 @@ transition: 0.5s linear;
 
 .packages{
     width: 100%;
-    margin: auto;
-    background-color:whitesmoke;  
+    margin: auto;    
+    background:linear-gradient(rgba(0, 0, 0, 0),rgba(16, 184, 52, 0.597),rgba(0, 0, 0, 0))
 
 }
 .title{
@@ -323,7 +327,7 @@ transition: 0.5s linear;
     width:87%; 
     height: 100%;  
     display: flex;
-    background-color:rgb(220, 242, 241);
+    background-color:rgb(255, 237, 237);
     position: relative;
     border-radius: 10px;
     opacity: 0.9;
@@ -331,11 +335,11 @@ transition: 0.5s linear;
     transition: 0.3s;
     box-sizing: border-box;  
 }
-.p1:hover{
+.packages-card:hover{
     width: 90%;
     opacity: 1;
 }
-.p2:hover{
+/* .p2:hover{
     width: 90%;
     opacity: 1;
 }
@@ -346,7 +350,7 @@ transition: 0.5s linear;
 .p4:hover{
     width: 90%;
     opacity: 1;
-}
+} */
 .package-image{   
    
     flex-basis:25%;
@@ -782,6 +786,11 @@ padding: 25px 15px 10px;
             left: 0px;
             z-index:-1;
         }
+        .btn6{            
+            padding: 8px 20px;           
+            font-size: 15px; 
+        }
+
     }
 @media screen and (min-device-width: 950px) 
     and (max-device-width: 1200px) {
@@ -1087,8 +1096,9 @@ padding: 25px 15px 10px;
 }
 .contact-details{
    margin-left: -30px;
-   flex-basis: 40%;
-   width:100%;   
+   flex-basis: 30%;
+   width:300px;  
+   height: 400px; 
    background-color: rgb(255, 255, 255);      
    border-radius: 20px;  
    padding: 25px;
@@ -1114,8 +1124,9 @@ padding: 25px 15px 10px;
 
 
 .contact-form {
-    flex-basis:40%;
-    width: 100%;
+    flex-basis:30%;
+    width:350px;  
+    height: 400px;
     padding: 20px;
     background-color:rgb(255, 255, 255);
     border-radius: 20px;
@@ -1199,7 +1210,7 @@ justify-content: space-between;
     height: 700px;
     background-color: rgb(217, 233, 226);
     position: absolute;
-    bottom: 400px;
+    bottom: 300px;
     z-index: -1;
 }
 
@@ -1232,7 +1243,7 @@ justify-content: space-between;
     .contact-details{    
         width: 70%;  
         padding: 10px;
-        margin:50px auto;
+        margin: auto;
         
      }
     .contact-form {        
@@ -1244,12 +1255,12 @@ justify-content: space-between;
 @media screen and (min-device-width: 900px) 
     and (max-device-width: 1200px) {
         .contact-details{    
-        width: 100%;         
+        width: 400px;         
         padding: 10px;
          
         }
         .contact-form {            
-        width: 90%; 
+        width: 400px; 
         margin: auto;       
         }
     }        
@@ -1367,3 +1378,176 @@ hr{
         width: 150px;
     }
 }
+
+
+
+
+
+
+
+/* login Page */
+
+.sign-in{
+    background:linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)), url(./images/download.jpeg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+.form{    
+    width: 500px;
+    background:rgba(0, 0, 0, 0.5);
+    padding: 20px;
+    margin:30px auto;
+    border-radius: 8px;
+    font-size: 20px;
+    border: 1px solid rgb(182, 180, 180);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    font-weight:600;
+}
+   
+.form label{
+    display: block;
+    margin-bottom: 8px;
+    margin-top: 20px;
+    
+}
+.link{
+    float: right;
+    text-decoration: none;
+    color:#0550ae;
+}
+
+.form input{
+    width: 100%;
+    padding: 12px;
+    margin-top: 16px;
+    box-sizing:border-box;
+    border-radius: 8px;
+     border: 1px solid rgb(195, 191, 191);
+}
+button{
+ width: 100%;
+ color: white;
+ background-color:  rgb(20, 74, 54);
+ margin-top: 20px;   
+ padding: 10px;
+ border-radius: 8px;
+ font-size: 25px;
+ font-weight: 400;
+ cursor: pointer;
+ border: none;
+}
+button:hover{
+    background-color: #22923f;
+}
+button a{
+    text-decoration: none;
+    color: white;
+}
+fieldset{
+    width: 400px;
+    background-color: white;
+    padding: 20px;
+    margin:30px auto;
+    border-radius: 8px;
+    font-size: 20px;
+    border: 1px solid rgb(182, 180, 180) ;
+}
+fieldset label{
+    text-align: center;
+    display: block;
+    margin-bottom: 8px;
+    margin-top: 20px;
+    font-size: 25px;
+   
+    
+}
+.pass{
+    color:#0550ae;
+    text-decoration: none;
+    font-weight: bolder;
+    font-size: 26px;
+}
+.ac{
+    color:#0550ae;
+    text-decoration: none;
+}
+.pass:hover{
+    text-decoration: underline;
+}
+.ac:hover{
+    text-decoration: underline;
+}
+.form2{
+    display: flex;
+}
+.footer-form{
+    background-color: transparent;
+}
+
+
+@media (max-width:768px){
+    .form{    
+        width: 80%;        
+        font-size: 20px;  
+      
+    }
+       
+    
+    .form label{
+        display: block;
+        margin-bottom: 8px;
+        margin-top: 20px;
+        
+    }
+    .link{
+        float: none;
+        text-decoration: none;
+        color:#0550ae;
+    }
+    
+    .form input{
+        width: 100%;
+        padding: 12px;
+        margin-top: 16px;
+        box-sizing:border-box;
+        border-radius: 8px;
+         border: 1px solid rgb(195, 191, 191);
+    }
+    button{
+     width: 100%;
+     color: white;
+     background-color: #1f883d;
+     margin-top: 20px;   
+     padding: 10px;
+     border-radius: 8px;
+     font-size: 25px;
+     font-weight: 400;
+     cursor: pointer;
+     border: none;
+    }
+    button:hover{
+        background-color: #22923f;
+    }
+    button a{
+        text-decoration: none;
+        color: white;
+    }
+    
+    fieldset{
+        width: 80%;     
+        
+    }
+    fieldset div{
+        padding-top: 10px;
+    }
+    
+    .form2{
+        display: block;
+    }
+}
+
